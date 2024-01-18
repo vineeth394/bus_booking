@@ -6,6 +6,7 @@
     <groupId>com.example</groupId>
     <artifactId>bus-booking-app</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging> <!-- Explicitly set packaging to WAR -->
 
     <parent>
         <groupId>org.springframework.boot</groupId>
