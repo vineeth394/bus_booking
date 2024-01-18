@@ -6,7 +6,7 @@
     <groupId>com.example</groupId>
     <artifactId>bus-booking-app</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging> <!-- Explicitly set packaging to WAR -->
+    <packaging>war</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -45,20 +45,14 @@
                 </configuration>
             </plugin>
 
-            <!-- Spring Boot Maven Plugin Configuration -->
+            <!-- Maven War Plugin Configuration -->
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                        <configuration>
-                            <packaging>war</packaging>
-                        </configuration>
-                    </execution>
-                </executions>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version>
+                <configuration>
+                    <!-- Configure war settings if needed -->
+                </configuration>
             </plugin>
         </plugins>
     </build>
