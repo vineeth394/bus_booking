@@ -44,13 +44,20 @@
                 </configuration>
             </plugin>
 
-            <!-- Maven War Plugin Configuration -->
+            <!-- Spring Boot Maven Plugin Configuration -->
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.1</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.5.4</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
-                    <warSourceDirectory>src/main/webapp</warSourceDirectory>
+                    <packaging>war</packaging>
                 </configuration>
             </plugin>
         </plugins>
