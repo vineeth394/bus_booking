@@ -33,6 +33,7 @@ Use the build_deploy.sh script to build, run, and stop the application.
 build_deploy.sh
 bash
 Copy code
+================================================================================================================================================
 #!/bin/bash
 
 # Step 1: Set up Maven environment
@@ -88,6 +89,8 @@ Run the application for 5 minutes.
 Gracefully stop the Spring Boot application after 5 minutes.
 GitHub Actions CI/CD Pipeline
 This project includes a GitHub Actions CI pipeline that automatically builds, tests, and deploys the Spring Boot application whenever you push changes to the repository.
+
+==========================================================================================================================================================================
 
 .github/workflows/java-ci.yml
 yaml
@@ -170,6 +173,7 @@ jobs:
         run: |
           echo "Stopping the app gracefully..."
           mvn spring-boot:stop
+=============================================================================================================================================================================
 How the CI/CD Pipeline Works
 Checkout the repository: This step checks out the code from the repository.
 Set up Java: Sets up Java 11 using the actions/setup-java action.
@@ -182,7 +186,7 @@ Wait for 5 minutes: Waits for 5 minutes to simulate the running app.
 Gracefully stop the Spring Boot application: Stops the Spring Boot app using the spring-boot:stop command.
 Jenkins Pipeline
 The following Jenkins pipeline (Jenkinsfile) can be used for CI/CD with Jenkins.
-
+===========================================================================================================================================================================
 Jenkinsfile
 groovy
 Copy code
