@@ -9,6 +9,10 @@ This repository contains the source code for the Bus Booking Application built w
 - GitHub repository for CI/CD (optional)
 - Jenkins for Jenkins pipeline (optional)
 
+  # Bus Booking App
+=============================================================================================================================================================================
+=============================================================================================================================================================================
+
 ## Project Setup
 
 # Bus Booking App
@@ -139,6 +143,7 @@ GitHub Actions CI/CD Pipeline
 This project includes a GitHub Actions CI pipeline that automatically builds, tests, and deploys the Spring Boot application whenever you push changes to the repository.
 
 ==========================================================================================================================================================================
+==========================================================================================================================================================================
 
 .github/workflows/java-ci.yml
 yaml
@@ -234,6 +239,7 @@ Wait for 5 minutes: Waits for 5 minutes to simulate the running app.
 Gracefully stop the Spring Boot application: Stops the Spring Boot app using the spring-boot:stop command.
 Jenkins Pipeline
 The following Jenkins pipeline (Jenkinsfile) can be used for CI/CD with Jenkins.
+===========================================================================================================================================================================
 ===========================================================================================================================================================================
 Jenkinsfile
 groovy
